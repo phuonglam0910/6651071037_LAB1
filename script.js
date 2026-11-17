@@ -273,7 +273,7 @@
     });
     brandFilter.addEventListener("change", () => {
       activeBrand = brandFilter.value;
-      renderProducts();
+      setFilter("Tất cả");
     });
     minPriceInput.addEventListener("input", renderProducts);
     maxPriceInput.addEventListener("input", renderProducts);
