@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f7f5f0">
+  <meta name="description" content="L'Écho — tuyển chọn phụ kiện và thời trang từ những thương hiệu bạn yêu thích.">
+  <title>L'Écho — Mặc đẹp theo cách của bạn</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement">FREESHIP CHO ĐƠN TỪ 999K <span>✦</span> ƯU ĐÃI 10% CHO ĐƠN HÀNG ĐẦU TIÊN</div>
+  <header class="site-header">
+    <div class="header-main">
+      <div class="header-side">
+        <button class="icon-button menu-button" id="menuToggle" aria-label="Mở menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+        <button class="icon-button" id="searchToggle" aria-label="Tìm kiếm">
+          <svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 4.5 4.5"/></svg>
+        </button>
+        <span class="header-label">Tìm kiếm</span>
+      </div>
+      <a class="brand" href="#" aria-label="L'Écho trang chủ">
+        <span class="brand-name">L'Écho</span>
+        <span class="brand-caption">STUDIO · CURATED STYLE</span>
+      </a>
+      <div class="header-side right">
+        <button class="icon-button" id="favoritesButton" aria-label="Danh sách yêu thích">
+          <svg viewBox="0 0 24 24"><path d="M20.8 8.8c0 5.1-8.8 10-8.8 10s-8.8-4.9-8.8-10a4.7 4.7 0 0 1 8.8-2.2 4.7 4.7 0 0 1 8.8 2.2Z"/></svg>
+          <span class="cart-count" id="favoritesCount">0</span>
+        </button>
+        <button class="icon-button" id="accountButton" aria-label="Tài khoản">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c.4-3.5 3.2-5.5 7-5.5s6.6 2 7 5.5"/></svg>
+        </button>
+        <button class="icon-button" id="cartButton" aria-label="Giỏ hàng">
+          <svg viewBox="0 0 24 24"><path d="M5 8h14l1 12H4L5 8Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+      </div>
+    </div>
+    <nav class="nav-bar" id="mainNav" aria-label="Điều hướng chính">
+      <a href="#san-pham" data-nav-filter="Tất cả">Sản phẩm</a>
+      <a href="#danh-muc" data-nav-filter="Túi xách">Túi xách</a>
+      <a href="#san-pham" data-nav-filter="Thời trang">Thời trang</a>
+      <a href="#san-pham" data-nav-filter="Giày dép">Giày dép</a>
+      <a href="#san-pham" data-nav-filter="Mỹ phẩm">Làm đẹp</a>
+      <a href="#san-pham" data-nav-filter="Tất cả">Thương hiệu</a>
+      <a href="#story">Câu chuyện L'Écho</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="Bộ sưu tập mùa mới">
+      <div class="hero-copy">
+        <p class="eyebrow">Mùa mới · Chuyện nàng thơ</p>
+        <h1>Mặc đẹp,<br><em>sống thật</em><br>với mình.</h1>
+        <p class="hero-description">Những món đồ bạn yêu, từ những thương hiệu bạn tin. Tuyển chọn tinh tế cho tủ đồ luôn là chính bạn.</p>
+        <a class="button-primary" href="#san-pham">Khám phá bộ sưu tập
+          <svg viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"/></svg>
+        </a>
+        <span class="hero-index">01 — 03 &nbsp; / &nbsp; NEW SEASON</span>
+      </div>
+      <img class="hero-image" src="images/hero-gioi-thieu-lecho.png" alt="Phong cách thời trang thanh lịch với áo khoác màu be" fetchpriority="high">
+    </section>
+
+    <section class="benefits" aria-label="Dịch vụ của L'Écho">
+      <div class="benefit">
+        <svg viewBox="0 0 24 24"><path d="M3 7h11v11H3zM14 11h4l3 3v4h-7z"/><circle cx="7.5" cy="19" r="1.5"/><circle cx="17.5" cy="19" r="1.5"/></svg>
+        <div><strong>Giao hàng miễn phí</strong><span>Cho đơn từ 999.000đ</span></div>
+      </div>
+      <div class="benefit">
+        <svg viewBox="0 0 24 24"><path d="M20 7v5h-5M4 17v-5h5"/><path d="M5.5 9a7 7 0 0 1 12-2L20 12M4 12l2.5 5a7 7 0 0 0 12-2"/></svg>
+        <div><strong>Đổi trả dễ dàng</strong><span>Trong vòng 7 ngày</span></div>
+      </div>
+      <div class="benefit">
+        <svg viewBox="0 0 24 24"><path d="M12 3 19 6v5c0 5-3 8-7 10-4-2-7-5-7-10V6l7-3Z"/><path d="m9 12 2 2 4-4"/></svg>
+        <div><strong>Cam kết chính hãng</strong><span>An tâm chọn điều bạn thích</span></div>
+      </div>
+    </section>
+
+    <section class="section" id="danh-muc">
+      <div class="section-heading">
+        <div><p class="eyebrow">Chọn theo cảm hứng</p><h2>Điều nàng đang tìm</h2></div>
+        <a class="text-link" href="#san-pham">Xem tất cả <svg viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"/></svg></a>
+      </div>
+      <div class="category-grid">
+        <a class="category-card" href="#san-pham" data-category="Túi xách">
+          <img class="category-image" src="images/coach-nolita.png" alt="Túi Coach Nolita 19 Signature Canvas màu Chalk" loading="lazy">
+          <div class="category-info"><h3>Túi xách</h3><span>NHỎ XINH, ĐỦ CUỐN HÚT ↗</span></div>
+        </a>
+        <a class="category-card" href="#san-pham" data-category="Thời trang">
+          <img class="category-image" src="images/thoi-trang.png" alt="Đầm dạ hội màu hồng trong bộ sưu tập thời trang" loading="lazy">
+          <div class="category-info"><h3>Thời trang</h3><span>DIỆN LÊN LÀ THẤY VUI ↗</span></div>
+        </a>
+        <a class="category-card" href="#san-pham" data-category="Giày dép">
+          <img class="category-image" src="images/giay-dep.png" alt="Giày sandal cao gót quai mảnh màu đen" loading="lazy">
+          <div class="category-info"><h3>Giày dép</h3><span>BƯỚC ĐI CÓ GU ↗</span></div>
+        </a>
+        <a class="category-card" href="#san-pham" data-category="Mỹ phẩm">
+          <img class="category-image" src="images/lam-dep.png" alt="Bộ mỹ phẩm và trang điểm Dior" loading="lazy">
+          <div class="category-info"><h3>Làm đẹp</h3><span>YÊU CHIỀU BẢN THÂN ↗</span></div>
+        </a>
+      </div>
+    </section>
+
+    <section class="products-section" id="san-pham">
+      <div class="products-inner">
+        <div class="section-heading">
+          <div><p class="eyebrow">Được yêu thích tuần này</p><h2>Những món nàng mê</h2></div>
+          <a class="text-link" href="#newsletter">Xem bộ sưu tập <svg viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"/></svg></a>
+        </div>
+        <div class="filter-row" role="group" aria-label="Lọc sản phẩm">
+          <button class="filter-button active" type="button" data-filter="Tất cả">Tất cả</button>
+          <button class="filter-button" type="button" data-filter="Túi xách">Túi xách</button>
+          <button class="filter-button" type="button" data-filter="Thời trang">Thời trang</button>
+          <button class="filter-button" type="button" data-filter="Giày dép">Giày dép</button>
+          <button class="filter-button" type="button" data-filter="Mỹ phẩm">Mỹ phẩm</button>
+          <label class="brand-filter">
+            <span>Nhãn hàng</span>
+            <select id="brandFilter" aria-label="Chọn nhãn hàng">
+              <option value="">Tất cả nhãn hàng</option>
+            </select>
+          </label>
+          <div class="price-filter" role="group" aria-label="Lọc theo khoảng giá">
+            <label for="minPrice">Giá từ</label>
+            <input id="minPrice" type="number" min="0" step="100000" inputmode="numeric" placeholder="0đ">
+            <span class="price-separator">đến</span>
+            <label class="visually-hidden" for="maxPrice">Giá đến</label>
+            <input id="maxPrice" type="number" min="0" step="100000" inputmode="numeric" placeholder="Không giới hạn">
+            <span>đ</span>
+          </div>
+        </div>
+        <p class="filter-result" id="filterResult" aria-live="polite"></p>
+        <div class="product-grid" id="productGrid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="story" id="story">
+      <img class="story-image" src="images/gioi-thieu-lecho.png" alt="Phong cách thời trang L'Écho" loading="lazy">
+      <div class="story-copy">
+        <p class="eyebrow">Một chút về L'Écho</p>
+        <h2>Phong cách đẹp nhất là phong cách của bạn.</h2>
+        <p>L'Écho tin rằng mặc đẹp không cần phải giống ai. Tụi mình tìm những thiết kế có câu chuyện, chọn những thương hiệu có tâm và để bạn tự do phối nên phiên bản mình yêu nhất.</p>
+        <a class="text-link" href="#newsletter">Tìm hiểu về L'Écho <svg viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"/></svg></a>
+      </div>
+    </section>
+
+    <section class="newsletter" id="newsletter">
+      <p class="eyebrow">Thư từ L'Écho</p>
+      <h2>Một chút xinh gửi nàng.</h2>
+      <p>Đăng ký nhận tin mới, bộ sưu tập và ưu đãi nho nhỏ dành riêng cho bạn.</p>
+      <form class="newsletter-form" id="newsletterForm">
+        <input type="email" name="email" placeholder="Email của nàng" aria-label="Email của nàng" required>
+        <button type="submit">Đăng ký ↗</button>
+      </form>
+      <div class="newsletter-message" id="newsletterMessage" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-main">
+      <div class="footer-brand">
+        <a class="brand" href="#" aria-label="L'Écho trang chủ"><span class="brand-name">L'Écho</span><span class="brand-caption">STUDIO · CURATED STYLE</span></a>
+        <p>L'Écho tuyển chọn những điều xinh xắn cho phong cách riêng của bạn.</p>
+      </div>
+      <div class="footer-column"><h3>Khám phá</h3><a href="#san-pham">Sản phẩm mới</a><a href="#danh-muc">Danh mục</a><a href="#san-pham">Thương hiệu</a></div>
+      <div class="footer-column"><h3>Hỗ trợ</h3><a href="#newsletter">Liên hệ L'Écho</a><a href="#newsletter">Chính sách đổi trả</a><a href="#newsletter">Giao hàng & thanh toán</a></div>
+      <div class="footer-column"><h3>Theo dõi L'Écho</h3><a href="#newsletter">Instagram</a><a href="#newsletter">Facebook</a><a href="#newsletter">TikTok</a></div>
+    </div>
+    <div class="footer-bottom"><span>© 2025 L'ÉCHO. Mặc đẹp theo cách của bạn.</span><span>Made with a little bit of love ♡</span></div>
+  </footer>
+  <dialog class="cart-dialog" id="cartDialog" aria-labelledby="cartTitle">
+    <div class="cart-header">
+      <div><p class="eyebrow">L'Écho · Your selection</p><h2 id="cartTitle">Giỏ hàng</h2></div>
+      <button class="cart-close" id="cartClose" type="button" aria-label="Đóng giỏ hàng">×</button>
+    </div>
+    <div class="cart-items" id="cartItems" aria-live="polite"></div>
+    <div class="cart-footer">
+      <div class="cart-subtotal"><span>Tạm tính</span><strong id="cartSubtotal">0đ</strong></div>
+      <button class="button-primary cart-continue" id="cartContinue" type="button">Tiếp tục mua sắm</button>
+    </div>
+  </dialog>
+  <dialog class="cart-dialog" id="favoritesDialog" aria-labelledby="favoritesTitle">
+    <div class="cart-header">
+      <div><p class="eyebrow">L'Écho · Your favorites</p><h2 id="favoritesTitle">Yêu thích</h2></div>
+      <button class="cart-close" id="favoritesClose" type="button" aria-label="Đóng danh sách yêu thích">×</button>
+    </div>
+    <div class="cart-items" id="favoritesItems" aria-live="polite"></div>
+    <div class="cart-footer">
+      <button class="button-primary cart-continue" id="favoritesContinue" type="button">Tiếp tục mua sắm</button>
+    </div>
+  </dialog>
+  <dialog class="auth-dialog" id="authDialog" aria-labelledby="authTitle">
+    <button class="cart-close auth-close" id="authClose" type="button" aria-label="Đóng đăng nhập">×</button>
+    <p class="eyebrow">L'Écho · Your account</p>
+    <h2 id="authTitle">Đăng nhập</h2>
+    <p class="auth-notice">Vui lòng đăng nhập để sử dụng giỏ hàng và danh sách yêu thích. Tài khoản chỉ lưu trong trình duyệt này.</p>
+    <form class="auth-form" id="loginForm">
+      <label for="loginEmail">Email</label>
+      <input id="loginEmail" name="email" type="email" autocomplete="email" pattern="[^\s@]+@[^\s@.]+(\.[^\s@.]+)+" title="Email cần có @ và tên miền có dấu chấm." required>
+      <label for="loginPassword">Mật khẩu</label>
+      <div class="password-field">
+        <input id="loginPassword" name="password" type="password" autocomplete="current-password" required>
+        <button class="password-toggle" type="button" data-password-toggle="loginPassword" aria-label="Hiện mật khẩu" aria-pressed="false">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 12s3.4-6 9.5-6 9.5 6 9.5 6-3.4 6-9.5 6-9.5-6-9.5-6Z"/><circle cx="12" cy="12" r="2.5"/></svg>
+        </button>
+      </div>
+      <button class="button-primary auth-submit" type="submit">Đăng nhập</button>
+      <p class="auth-switch">Chưa có tài khoản? <button type="button" data-auth-mode="register">Đăng ký</button></p>
+    </form>
+    <form class="auth-form" id="registerForm" hidden>
+      <label for="registerName">Tên của bạn</label>
+      <input id="registerName" name="name" type="text" autocomplete="name" maxlength="60" required>
+      <label for="registerEmail">Email</label>
+      <input id="registerEmail" name="email" type="email" autocomplete="email" pattern="[^\s@]+@[^\s@.]+(\.[^\s@.]+)+" title="Email cần có @ và tên miền có dấu chấm." required>
+      <label for="registerPassword">Mật khẩu (ít nhất 8 ký tự)</label>
+      <div class="password-field">
+        <input id="registerPassword" name="password" type="password" autocomplete="new-password" minlength="8" required>
+        <button class="password-toggle" type="button" data-password-toggle="registerPassword" aria-label="Hiện mật khẩu" aria-pressed="false">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 12s3.4-6 9.5-6 9.5 6 9.5 6-3.4 6-9.5 6-9.5-6-9.5-6Z"/><circle cx="12" cy="12" r="2.5"/></svg>
+        </button>
+      </div>
+      <label for="registerPasswordConfirm">Nhập lại mật khẩu</label>
+      <div class="password-field">
+        <input id="registerPasswordConfirm" name="passwordConfirm" type="password" autocomplete="new-password" minlength="8" required>
+        <button class="password-toggle" type="button" data-password-toggle="registerPasswordConfirm" aria-label="Hiện mật khẩu" aria-pressed="false">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 12s3.4-6 9.5-6 9.5 6 9.5 6-3.4 6-9.5 6-9.5-6-9.5-6Z"/><circle cx="12" cy="12" r="2.5"/></svg>
+        </button>
+      </div>
+      <button class="button-primary auth-submit" type="submit">Tạo tài khoản</button>
+      <p class="auth-switch">Đã có tài khoản? <button type="button" data-auth-mode="login">Đăng nhập</button></p>
+    </form>
+    <div class="auth-account" id="authAccount" hidden>
+      <p id="authWelcome"></p>
+      <button class="button-primary auth-submit" id="logoutButton" type="button">Đăng xuất</button>
+    </div>
+    <p class="auth-message" id="authMessage" role="status" aria-live="polite"></p>
+  </dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
